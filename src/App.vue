@@ -319,4 +319,35 @@ main {
     padding: 20px;
   }
 }
+
+
+@media (max-width: 390px) {
+  .nev {
+    position: relative;
+    margin-top: 70px; 
+    text-align: center;
+    padding: 10% 10% 0;
+  }
+
+  .card-image { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+  }
+
+  .card {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+
+  .card-content {
+    order: 1;
+    font-size: 14px; 
+    padding: 10px; 
+  }
+}
+
 </style>
