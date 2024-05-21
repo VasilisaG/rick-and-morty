@@ -26,7 +26,7 @@
               <p>Species: {{ character.species }}</p>
               <p>Last Location: {{ character.lastLocation }}</p> 
               <p>First Episode: {{ character.firstEpisode }}</p> 
-              <p>Episodes: {{ character.episodes.join(', ') }}</p> <!-- Добавлено отображение эпизодов -->
+              <p>Episodes: {{ character.episodes.join(', ') }}</p> 
             </div>
           </div>
         </div>
@@ -288,17 +288,35 @@ main {
   font-size: 16px;
 }
 @media (max-width: 768px) {
-  .card {
-    flex-direction: column; 
+  .nev {
+    width: 80%; 
+    margin-top: 13%;
+    margin-left: 0; 
+    text-align: left;
   }
-}
+  input[type="text"],
+  select {
+    width: 100%;
+  }
 
-  .card-image {
-    flex: 0 0 auto; 
-    margin-bottom: 20px; 
+  .cards{
+    margin-top: 20%;
+  }
+
+  .card {
+    width: calc(100% - 40px); 
+    margin: 60px 20px 0;
+  }
+
+  .card-image { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
   }
 
   .card-content {
-    flex: 0 0 auto;
+    color: #f0f0f0;
+    padding: 20px;
+  }
 }
 </style>
