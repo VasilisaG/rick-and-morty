@@ -136,14 +136,6 @@ header h1 {
   margin-bottom: 10px;
 }
 
-.nev {
-  top: 40%;
-  position: absolute; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  text-align: center; 
-}
-
 
 input[type="text"],
 select {
@@ -195,13 +187,23 @@ button:hover {
 main {
   width: 100%; 
   max-width: 100%; 
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   background:rgb(32, 35, 41);
   padding: 0 20px; 
 }
 
+.nev {
+  padding-top: 20%;
+  padding-bottom: 10%;
+  position: absolute; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
+}
 
 .cards {
   display: flex;
@@ -214,7 +216,7 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin-top: 7%;
+  margin-top: 10%;
 }
 
 .card {
@@ -289,8 +291,8 @@ main {
 }
 @media (max-width: 768px) {
   .nev {
-    width: 80%; 
-    margin-top: 13%;
+    margin-top: 10%;
+    display: block;
     margin-left: 0; 
     text-align: left;
   }
@@ -300,7 +302,7 @@ main {
   }
 
   .cards{
-    margin-top: 20%;
+    margin-top: 30%;
   }
 
   .card {
@@ -321,7 +323,7 @@ main {
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 490px) {
   .nev {
     position: relative;
     margin-top: 70px; 
@@ -349,5 +351,4 @@ main {
     padding: 10px; 
   }
 }
-
 </style>
